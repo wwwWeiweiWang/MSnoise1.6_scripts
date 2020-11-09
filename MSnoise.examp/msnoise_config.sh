@@ -1,12 +1,13 @@
 set -ex
 
 sqlite3 msnoise.sqlite "UPDATE config SET value = '*' WHERE name = 'channels'"
-sqlite3 msnoise.sqlite "UPDATE config SET value = 'Z1,Z2,12' WHERE name = 'components_to_compute'"
-sqlite3 msnoise.sqlite "UPDATE config SET value = '2014-05-15' WHERE name = 'startdate'"
-sqlite3 msnoise.sqlite "UPDATE config SET value = '2015-06-23' WHERE name = 'enddate'"
+sqlite3 msnoise.sqlite "UPDATE config SET value = 'HH1,HH2,HHZ' WHERE name = 'components_to_compute'"
+sqlite3 msnoise.sqlite "UPDATE config SET value = 'Z1,Z2,12' WHERE name = 'components_to_compute_single_station'"
+sqlite3 msnoise.sqlite "UPDATE config SET value = '2020-03-09' WHERE name = 'startdate'"
+sqlite3 msnoise.sqlite "UPDATE config SET value = '2020-05-23' WHERE name = 'enddate'"
 sqlite3 msnoise.sqlite "UPDATE config SET value = '300' WHERE name = 'maxlag'"
-sqlite3 msnoise.sqlite "UPDATE config SET value = '2014-05-15' WHERE name = 'ref_begin'"
-sqlite3 msnoise.sqlite "UPDATE config SET value = '2015-06-23' WHERE name = 'ref_end'"
+sqlite3 msnoise.sqlite "UPDATE config SET value = '2020-03-09' WHERE name = 'ref_begin'"
+sqlite3 msnoise.sqlite "UPDATE config SET value = '2020-05-23' WHERE name = 'ref_end'"
 #sqlite3 msnoise.sqlite "UPDATE config SET value = '2014-09-23' WHERE name = 'ref_end'"
 #-------------------------
 
@@ -21,8 +22,8 @@ sqlite3 msnoise.sqlite "UPDATE config SET value = 'BUD' WHERE name = 'data_struc
 #msnoise config --set enddate="2014-xx-xx"
 
 # msnoise config --set analysis_duration=default,86400s
-sqlite3 msnoise.sqlite "UPDATE config SET value = '20' WHERE name = 'cc_sampling_rate'"
-sqlite3 msnoise.sqlite "UPDATE config SET value = 'Resample' WHERE name = 'resampling_method'"
+sqlite3 msnoise.sqlite "UPDATE config SET value = '10' WHERE name = 'cc_sampling_rate'"
+sqlite3 msnoise.sqlite "UPDATE config SET value = 'Lanczos' WHERE name = 'resampling_method'"
 # msnoise config --set decimation_factor=be ignored if you don't use decimate method # no this parameter in 1.5!!!
 sqlite3 msnoise.sqlite "UPDATE config SET value = '2.0' WHERE name = 'preprocess_lowpass'"
 sqlite3 msnoise.sqlite "UPDATE config SET value = '0.02' WHERE name = 'preprocess_highpass'"
@@ -42,7 +43,7 @@ sqlite3 msnoise.sqlite "UPDATE config SET value = 'linear' WHERE name = 'stack_m
 #sqlite3 msnoise.sqlite "UPDATE config SET value = '10.0' WHERE name = 'pws_timegate'"
 #sqlite3 msnoise.sqlite "UPDATE config SET value = '2.0' WHERE name = 'pws_power'"
 
-sqlite3 msnoise.sqlite "UPDATE config SET value = 'Y' WHERE name = 'autocorr'"
+#sqlite3 msnoise.sqlite "UPDATE config SET value = 'Y' WHERE name = 'autocorr'"
 sqlite3 msnoise.sqlite "UPDATE config SET value = 'N' WHERE name = 'keep_all'"
 sqlite3 msnoise.sqlite "UPDATE config SET value = 'Y' WHERE name = 'keep_days'"
 # 
