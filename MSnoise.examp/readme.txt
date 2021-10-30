@@ -3,7 +3,7 @@
 
 2. link your data folder to the current folder by link_dev.sh
 
-3. change the station table MSnoise.data.examp/stations.txt
+3. change the station table MSnoise.data.examp/stations.txt; check the filename in custom.py
 -----------------------------------------
 Network station longtitude latitude altitude
 YH LOBS6 178.796000 -38.977800 -1873.5
