@@ -1,7 +1,7 @@
 set -ex
 
-sqlite3 msnoise.sqlite "UPDATE config SET value = '*' WHERE name = 'channels'"
-sqlite3 msnoise.sqlite "UPDATE config SET value = 'HH1,HH2,HHZ' WHERE name = 'components_to_compute'"
+sqlite3 msnoise.sqlite "UPDATE config SET value = 'HH1,HH2,HHZ' WHERE name = 'channels'"
+sqlite3 msnoise.sqlite "UPDATE config SET value = 'Z1,Z2,12' WHERE name = 'components_to_compute'"
 sqlite3 msnoise.sqlite "UPDATE config SET value = 'Z1,Z2,12' WHERE name = 'components_to_compute_single_station'"
 sqlite3 msnoise.sqlite "UPDATE config SET value = '2014-05-15' WHERE name = 'startdate'"
 sqlite3 msnoise.sqlite "UPDATE config SET value = '2015-06-23' WHERE name = 'enddate'"
