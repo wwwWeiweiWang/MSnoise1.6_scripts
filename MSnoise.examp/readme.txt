@@ -12,6 +12,7 @@ YH LOBS8 178.459400 -38.843200 -651.3
 
 4. change parameters in msnoise_config.sh, refer to http://msnoise.org/doc/workflow/001_msnoise_admin.html
    change filters in main script msnoise.sh
+   (msnoise_config.sh is for single station cross component, msnoise_config_cross_sta.sh is for cross-station)
 
 5. run main script msnoise.sh
    this script basically follows MSnoise workflow http://msnoise.org/doc/workflow/0000_intro.html
