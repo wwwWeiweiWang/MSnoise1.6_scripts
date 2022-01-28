@@ -1,7 +1,7 @@
 set -ex
 
-sqlite3 msnoise.sqlite "UPDATE config SET value = 'EHE,EHN,EHZ' WHERE name = 'channels'"
-sqlite3 msnoise.sqlite "UPDATE config SET value = 'EE,EN,EZ,NE,NN,NZ,ZE,ZN,ZZ' WHERE name = 'components_to_compute'"
+sqlite3 msnoise.sqlite "UPDATE config SET value = 'HH1,HH2,HHZ' WHERE name = 'channels'"
+sqlite3 msnoise.sqlite "UPDATE config SET value = '11,12,1Z,21,22,2Z,Z1,Z2,ZZ' WHERE name = 'components_to_compute'"
 sqlite3 msnoise.sqlite "UPDATE config SET value = '' WHERE name = 'components_to_compute_single_station'"
 sqlite3 msnoise.sqlite "UPDATE config SET value = '2014-05-15' WHERE name = 'startdate'"
 sqlite3 msnoise.sqlite "UPDATE config SET value = '2015-06-23' WHERE name = 'enddate'"
@@ -35,7 +35,7 @@ sqlite3 msnoise.sqlite "UPDATE config SET value = 'N' WHERE name = 'remove_respo
 #msnoise config --set response_format=paz
 #msnoise config --set response_path=data_folder/PZs
 #msnoise config --set response_prefilt="(0.001,0.002,1.8,2)"
-sqlite3 msnoise.sqlite "UPDATE config SET value = '1800' WHERE name = 'corr_duration'"
+sqlite3 msnoise.sqlite "UPDATE config SET value = '14400' WHERE name = 'corr_duration'"
 sqlite3 msnoise.sqlite "UPDATE config SET value = '0.7' WHERE name = 'overlap'" 
 sqlite3 msnoise.sqlite "UPDATE config SET value = '3' WHERE name = 'windsorizing'" 
 # windorizing at N time RMS, -1 means 1-bit 
