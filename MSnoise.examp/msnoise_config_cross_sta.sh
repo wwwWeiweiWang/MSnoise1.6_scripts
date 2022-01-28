@@ -55,14 +55,14 @@ sqlite3 msnoise.sqlite "UPDATE config SET value = 'SAC' WHERE name = 'export_for
 # for velocity changes
 # msnoise config --set crondays=for velocity changes, ignore
 sqlite3 msnoise.sqlite "UPDATE config SET value = '1,20' WHERE name = 'mov_stack'"
-sqlite3 msnoise.sqlite "UPDATE config SET value = 'static' WHERE name = 'dtt_lag'"
-#sqlite3 msnoise.sqlite "UPDATE config SET value = '0.2' WHERE name = 'dtt_v'"
-sqlite3 msnoise.sqlite "UPDATE config SET value = '20' WHERE name = 'dtt_minlag'"
-sqlite3 msnoise.sqlite "UPDATE config SET value = '70' WHERE name = 'dtt_width'"
+sqlite3 msnoise.sqlite "UPDATE config SET value = 'dynamic' WHERE name = 'dtt_lag'"
+sqlite3 msnoise.sqlite "UPDATE config SET value = '0.5' WHERE name = 'dtt_v'"
+#sqlite3 msnoise.sqlite "UPDATE config SET value = '20' WHERE name = 'dtt_minlag'"
+sqlite3 msnoise.sqlite "UPDATE config SET value = '50' WHERE name = 'dtt_width'"
 sqlite3 msnoise.sqlite "UPDATE config SET value = 'both' WHERE name = 'dtt_sides'"
 sqlite3 msnoise.sqlite "UPDATE config SET value = '0.7' WHERE name = 'dtt_mincoh'"
 sqlite3 msnoise.sqlite "UPDATE config SET value = '0.1' WHERE name = 'dtt_maxerr'"
-sqlite3 msnoise.sqlite "UPDATE config SET value = '0.2' WHERE name = 'dtt_maxdt'"
+sqlite3 msnoise.sqlite "UPDATE config SET value = '0.4' WHERE name = 'dtt_maxdt'"
 
 # msnoise config --set plugins=default
 
