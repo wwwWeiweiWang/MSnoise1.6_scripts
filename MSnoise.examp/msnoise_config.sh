@@ -55,7 +55,7 @@ sqlite3 msnoise.sqlite "UPDATE config SET value = 'SAC' WHERE name = 'export_for
 sqlite3 msnoise.sqlite "UPDATE config SET value = '1,10,20,30' WHERE name = 'mov_stack'"
 sqlite3 msnoise.sqlite "UPDATE config SET value = 'static' WHERE name = 'dtt_lag'"
 #sqlite3 msnoise.sqlite "UPDATE config SET value = '0.2' WHERE name = 'dtt_v'"
-sqlite3 msnoise.sqlite "UPDATE config SET value = '0' WHERE name = 'dtt_minlag'"
+sqlite3 msnoise.sqlite "UPDATE config SET value = '10' WHERE name = 'dtt_minlag'"
 sqlite3 msnoise.sqlite "UPDATE config SET value = '70' WHERE name = 'dtt_width'"
 sqlite3 msnoise.sqlite "UPDATE config SET value = 'both' WHERE name = 'dtt_sides'"
 sqlite3 msnoise.sqlite "UPDATE config SET value = '0.88' WHERE name = 'dtt_mincoh'"
