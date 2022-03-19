@@ -1,4 +1,4 @@
-Corresponding paper: https://doi.org/10.1016/j.epsl.2022.117443
+Please cite the corresponding paper: https://doi.org/10.1016/j.epsl.2022.117443
 
 1. change your data format according to http://msnoise.org/doc/workflow/002_populate.html
    there is a script MSnoise.data.examp/chname.csh to give you an idea to change your data name to data_structure['BUD'] = "NET/STA/STA.NET.LOC.CHAN.YEAR.DAY"
