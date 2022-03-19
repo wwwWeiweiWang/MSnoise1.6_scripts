@@ -1,3 +1,5 @@
+Please cite the corresponding paper: https://doi.org/10.1016/j.epsl.2022.117443
+
 1. change your data format according to http://msnoise.org/doc/workflow/002_populate.html
    there is a script MSnoise.data.examp/chname.csh to give you an idea to change your data name to data_structure['BUD'] = "NET/STA/STA.NET.LOC.CHAN.YEAR.DAY"
 
@@ -20,6 +22,3 @@ YH LOBS8 178.459400 -38.843200 -651.3
 6. if you want to select days according to the correlation coefficient between daily cross-correlations and the reference stack, you can change select-days.csh, un-comment the 'csh select-days.csh' after msnoise stack -r in msnoise.sh, and also re-stack the reference stack.
 
 7. plot according to http://www.msnoise.org/doc/plotting.html
-
-
-Please cite the corresponding paper: https://doi.org/10.1016/j.epsl.2022.117443
